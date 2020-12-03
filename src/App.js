@@ -1,11 +1,14 @@
 import React from "react";
 import { Switch, Route, Link } from "react-router-dom";
+import styles from "./App.module.css";
 
 import Home from "./Home/Home.jsx";
 import Foo from "./Foo/Foo.jsx";
 import Bar from "./Bar/Bar.jsx";
 import Baz from "./Baz/Baz.jsx";
 import Error from "./Error/Error.jsx";
+
+
 
 // here is some external content. look at the /baz route below
 // to see how this content is passed down to the components via props
@@ -19,20 +22,20 @@ const externalContent = {
 function App() {
   return (
     <>
-      <header>
+      <header className={styles.header}>
         <nav>
-          <ul>
+          <ul className={styles.navs}>
             {/* these links should show you how to connect up a link to a specific route */}
-            <li>
+            <li className={styles.list}>
               <Link to="/">Home</Link>
             </li>
-            <li>
+            <li className={styles.list}>
               <Link to="/foo">Foo</Link>
             </li>
-            <li>
+            <li className={styles.list}>
               <Link to="/bar/hats/sombrero">Bar</Link>
             </li>
-            <li>
+            <li className={styles.list}>
               <Link to="/baz">Baz</Link>
             </li>
           </ul>
