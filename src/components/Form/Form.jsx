@@ -21,7 +21,7 @@ const Form = () => {
 
             <label htmlFor="myDropdownId">Input</label>
             <select className={styles.dropdown} name="myDropdown" id="myDropdownId">
-              <option value="foo">Foo</option>
+              <option value="articlereact">articleReact</option>
               <option value="bar">Bar</option>
               <option value="baz">Baz</option>
             </select>

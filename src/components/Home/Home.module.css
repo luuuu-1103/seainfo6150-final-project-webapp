@@ -1,0 +1,16 @@
+.title{
+    font-family: "McLaren", cursive;
+    font-weight: 900;
+    color: #c75643;
+    text-align: center;
+    padding-top: 2%;
+    
+}
+
+.logo {
+    
+    padding-left: 40%;
+    width: 250px;
+    display: flex;
+    position: sticky;
+}
